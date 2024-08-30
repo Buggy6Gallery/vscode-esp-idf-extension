@@ -28,8 +28,6 @@ import {
   CancellationToken,
 } from "vscode";
 import { getDocsLocaleLang, getDocsVersion } from "../espIdf/documentation/getDocsVersion";
-import { Logger } from "../logger/logger";
-import { OutputChannel } from "../logger/outputChannel";
 
 export async function configureProjectWithGcov(workspacePath: Uri) {
   const appTraceDestTrax = getConfigValueFromSDKConfig(
